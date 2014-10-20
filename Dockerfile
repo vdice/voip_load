@@ -10,4 +10,4 @@ ADD ./scripts/ /home/root/scripts
 
 EXPOSE 4444 5999
 
-CMD /home/root/scripts/loadme.rb -n 5
+ENTRYPOINT ["/home/root/scripts/loadme.rb"]
