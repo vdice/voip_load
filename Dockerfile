@@ -1,10 +1,8 @@
-FROM ubuntu:14.04
+FROM ruby:2.1.2
 
-RUN apt-get update 
-RUN apt-get install -y emacs24 ruby1.9.1-dev build-essential
-RUN sudo gem install selenium 
+RUN gem install selenium 
 RUN selenium install
-RUN sudo gem install selenium-webdriver 
+RUN gem install selenium-webdriver 
 
 ADD ./scripts/ /home/root/scripts
 
