@@ -70,6 +70,7 @@ http = Net::HTTP.new(@host, @port)
 http.read_timeout = 1000
 
 # run test
+sleep(15)
 count = 0
 for hub in SELENIUM_HUB_URLS
   (1..instance_num).each do |n|
